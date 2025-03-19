@@ -222,3 +222,16 @@
   
     /* Adjust left margin for mobile navigation menu items */
 } 
+
+
+@media (max-width: 450px) {
+.main-logo{
+  padding: 0px
+}
+
+.mobile-left-icon {
+  gap: 0px;  
+}
+
+
+}
