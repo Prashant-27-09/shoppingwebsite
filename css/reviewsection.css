@@ -1,0 +1,97 @@
+/* Review Section Container */
+.review-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    flex-wrap: nowrap; /* Prevents wrapping on all screen sizes */
+    margin: 0px 70px;
+
+}
+  
+  /* Left Section: Rating and Comments */
+  .review-left {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Rating and Comments Container */
+  .rating-comments {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Rating Display */
+  .rating {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+  }
+  
+  .average-rating {
+    font-size: 12px;
+    font-weight: bold;
+    margin-right: 5px;
+    color: black;
+  }
+  
+  .stars{
+    padding:0px 10px;
+  }
+
+  /* Star Colors */
+  .stars .checked {
+    color: #f279b5; /* Pink color for stars */
+    font-size: 12px;
+    
+  }
+
+  .google{
+    color: #d555a4;
+  }
+  
+  /* Comments Link */
+  .comments a {
+    color: #686868;
+    text-decoration: none;
+    font-size: 12px;
+  }
+  
+  .comments a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Powered by Google */
+  .powered-by {
+    font-size: 12px;
+    color: #242323;
+    margin-top: 5px;
+  }
+  
+  /* Right Section: Write Review Button */
+  .review-right {
+    margin-left: auto;
+  }
+  
+  .write-review-btn {
+    background-color: #d555a4; /* Pink background for button */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .write-review-btn:hover {
+    background-color: #a02663; /* Darker pink on hover */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .review-section {
+        margin: 0px 30px;
+    }
+ 
+  }
+  

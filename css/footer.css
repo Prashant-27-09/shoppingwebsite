@@ -1,0 +1,175 @@
+
+  
+  .footer {
+    background-color: rgb(226, 125, 142);
+    padding-top: 40px ;
+    padding-bottom: 10px;
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+  
+  .footer-section {
+    flex: 1 1 23%;
+    min-width: 220px;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  /* First Section Icons Centered */
+  .footer-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .footer-icons .main-icon img {
+    width: 100px;
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .footer-icons .side-icons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .footer-icons .side-icons img {
+    width: 50px;
+  }
+  
+  /* Heading Style */
+  .footer-heading {
+    display: block;
+    margin-bottom: 10px;
+    cursor: pointer;
+    color: white;
+    font-size: 15px;
+  }
+  
+  .footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-links li {
+    margin-bottom: 8px;
+    padding:5px 0px;
+    font-size: 13px;
+
+  }
+  
+  .footer-links a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s ease;
+  }
+  
+  .footer-links a:hover {
+    text-decoration: underline;
+  }
+  
+  .white-links a {
+    color: white;
+  }
+  
+  .white-links a:hover {
+    text-decoration: underline;
+  }
+  
+  input[type="checkbox"] {
+    display: none;
+  }
+  
+  /* Track Your Order link styling */
+  .track-order-mobile {
+    display: none; /* Hide by default (Only mobile view shows it) */
+    text-align: left;
+    padding: 10px 0;
+    border-bottom: 1px solid white;
+  }
+  
+  .track-order-mobile a {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+    padding: 10px 0;
+  }
+  
+  .track-order-mobile a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Track Order in Web View */
+  .track-order-web {
+    display: block;
+  }
+  
+  /* Mobile View Styles */
+  @media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer-section {
+      width: 100%;
+      text-align: left;
+      border-bottom: 1px solid white;
+      padding: 0 15px;
+    }
+
+    .footer-section-1{
+        padding-bottom: 20px;
+    }
+  
+    .footer-icons {
+      align-items: center;
+    }
+  
+    /* Track Your Order visible in mobile */
+    .track-order-mobile {
+      display: block;
+      font-size: 12px;
+    }
+  
+    /* Hide track-order inside info in mobile */
+    .track-order-web {
+      display: none;
+    }
+  
+    /* Heading Styles with Dropdown */
+    .footer-heading {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      padding: 10px 0;
+      margin-bottom: 0;
+      font-size: 12px;
+    }
+  
+    .footer-heading::after {
+      content: "\25BC"; /* Down arrow ▼ */
+      font-size: 14px;
+    }
+  
+    .footer-links {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease;
+      font-size: 11px;
+    }
+  
+    input[type="checkbox"]:checked ~ .footer-links {
+      max-height: 500px;
+      margin-top: 10px;
+    }
+  }
+  

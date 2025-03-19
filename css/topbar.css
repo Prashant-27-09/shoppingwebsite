@@ -1,0 +1,17 @@
+/* Topbar Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+
+}
+
+.topbar {
+  background-color: #ed5281;
+  color: white;
+  padding: 12px 1px;
+  font-size: 12px;
+  text-align: center;
+  font-weight: bold;
+}

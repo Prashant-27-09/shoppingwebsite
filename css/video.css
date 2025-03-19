@@ -1,0 +1,12 @@
+.video-banner {
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .video-banner video {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+  }
+  

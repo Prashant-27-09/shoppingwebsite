@@ -1,0 +1,132 @@
+.footer-bottom-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0px 100px;
+  }
+  
+  .footer-bottom-left,
+  .footer-bottom-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  /* Images section */
+  .footer-bottom-left-images {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .footer-bottom-left-images img {
+    width: 100px;
+    height: auto;
+  }
+  
+  .footer-bottom-left .company-name {
+    color: white;
+    font-size: 12px;
+    padding: 0 20px;
+  }
+  
+  /* Rights Reserved Dropdown */
+  .footer-bottom-right select {
+    padding: 5px;
+    border: none;
+    border-radius: 4px;
+  }
+  
+  .footer-bottom-right span {
+    color: white;
+    font-size: 12px;
+  }
+  
+  /* ------------------- MOBILE VIEW ------------------- */
+  @media (max-width: 768px) {
+    .footer-bottom-row {
+      flex-direction: column;
+      text-align: center;
+      gap: 10px;
+      margin: 0 20px;
+      
+    }
+  
+    /* Left Section */
+    .footer-bottom-left {
+      flex-direction: column-reverse;
+      width: 100%;
+      border-bottom: 1px solid white;
+      padding-bottom: 10px;
+    }
+  
+    /* Company Name on top */
+    .footer-bottom-left .company-name {
+      margin-bottom: 10px;
+    }
+  
+    /* Keep images side by side */
+    .footer-bottom-left-images {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+    }
+  
+    /* Right Section */
+    .footer-bottom-right {
+      width: 100%;
+      justify-content: space-between;
+      padding: 10px 0;
+    }
+  
+    .footer-bottom-right span {
+      text-align: left;
+    }
+  
+    .footer-bottom-right select {
+      margin-left: auto;
+    }
+
+    /* Right Section */
+  .footer-bottom-right {
+    width: 100%;
+    justify-content: space-between;
+    padding: 10px 0;
+  }
+
+  .footer-bottom-right span {
+    text-align: left;
+  }
+
+  .footer-bottom-right select {
+    margin-left: auto;
+    background-color: transparent; /* Transparent background */
+    color: white; /* White text */
+    -webkit-appearance: none; /* Remove default styling in WebKit browsers */
+    -moz-appearance: none; /* Remove default styling in Firefox */
+    appearance: none; /* Remove default styling */
+    position: relative;
+    width: 70px;
+
+  }
+
+  /* Adding a custom dropdown icon */
+  .footer-bottom-right {
+    position: relative;
+  }
+
+  .footer-bottom-right::after {
+    content: '\25BC'; /* Unicode character for downward arrow */
+    color: white; /* Icon color */
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none; /* Ensure the icon doesn't block select interaction */
+  }
+
+  .footer-bottom-right select option {
+    color: black; /* Set option text color to black */
+  }    
+  }
+  

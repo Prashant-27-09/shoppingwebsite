@@ -1,0 +1,224 @@
+/* 
+/* Main Header */
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 1;
+  margin: 0 50px;
+
+}
+
+/* Header Left: Logo and Navigation Menu */
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+
+
+
+
+/* Logo */
+.logo {
+  width: 120px;
+  margin: 0 20px;
+}
+
+/* Navigation Menu */
+.nav-menu ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-menu ul li {
+  margin: 0 10px;
+}
+
+.nav-menu ul li a {
+  text-decoration: none;
+  color: #696262;
+  font-size: 14px;
+}
+
+.nav-menu ul li a:hover{
+  color: black;
+  text-decoration: underline;
+
+} 
+.nav-menu ul li:hover i{
+  color: black ;
+  transform: rotate(180deg);
+}
+
+.nav-menu ul li i{
+  color: #696262;
+  font-size: 12px;
+}
+
+/* Header Right: Icons Menu */
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.header-right a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 15px;
+  text-decoration: none;
+  color: #696262;
+  font-size: 12px;
+}
+
+.header-right i {
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+/* Hamburger Menu Icon (Mobile View) */
+.hamburger {
+  display: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Sliding Mobile Menu */
+.mobile-nav {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: auto;
+  background-color: #fff;
+  z-index: 9999;
+  transition: 0.4s ease;
+  padding: 0; /* Ensure full-width background */
+}
+
+.mobile-nav.show-nav {
+  left: 0;
+}
+
+.wishlist-mobile {
+  display: none;
+}
+
+/* Close Button Row */
+.close-btn-row {
+  background-color: #bd2e75; /* Full-width pink background */
+  width: 100%;
+  display: flex;
+  justify-content: space-between; /* Distribute left, center, right */
+  align-items: center; /* Vertically center the content */
+  padding:5px 50px; /* Optional padding */
+}
+
+/* Close Button */
+.close-btn {
+  text-align: left; /* Aligns the X button to the left */
+  font-size: 15px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.close-btn-row .mobile-top-icon{
+  font-size: 20px;
+  color: white;
+}
+
+/* Mobile Navigation Menu List */
+.mobile-nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.mobile-nav ul li {
+  padding: 15px 0;
+}
+
+
+
+.mobile-nav ul li a {
+  text-decoration: none;
+  color: #696262;
+  font-size: 14px;
+  display: block;
+  margin-left: 25px; /* Set desired left margin */
+  margin-right: 25px;
+  border-bottom: 1px solid #ccc; /* Adds bottom border */
+
+}
+
+.main-logo{
+   margin-right: 25px ;
+}
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  /* Hide Desktop Navigation Menu */
+  .main-header{
+    margin: 0 ;
+
+  }
+
+  .nav-menu {
+    display: none;
+  }
+
+  a.wishlist-web, a.account{
+    display: none;
+  }
+  /* Display Hamburger Menu Icon */
+
+ 
+  .hamburger {
+    display: inline;
+  }
+
+  /* Header Left: Adjust Layout for Mobile */
+  .header-left {
+    flex: 1;
+    justify-content: space-between;
+  }
+
+  .main-logo{
+    padding:0 50px;
+  }
+
+  .mobile-left-icon {
+    display: flex;           /* Align hamburger & wishlist side by side */
+    align-items: center;   
+    gap: 10px;  
+  }
+  
+  .hamburger {
+    display: flex;
+    align-items: center;
+  }
+  
+  .wishlist-mobile {
+    display: flex;
+    flex-direction: column;  /* Icon and text stacked vertically */
+    align-items: center;
+    margin-left: 10px;
+    text-decoration: none;
+    color: #696262;
+    font-size: 12px;
+  }
+  
+  .wishlist-mobile i {
+    font-size: 16px;
+    margin-bottom: 4px;      /* Space between icon and text */
+  }
+  
+    /* Adjust left margin for mobile navigation menu items */
+} 

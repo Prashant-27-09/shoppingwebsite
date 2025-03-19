@@ -1,0 +1,53 @@
+/* Dropdown Container - Applies only on web view */
+@media (min-width: 769px) {
+    .nav-menu .dropdown {
+      position: relative;
+    }
+  
+    .nav-menu .dropdown-content {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #ffffff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      z-index: 1000;
+      white-space: nowrap;
+    }
+  
+    /* Show dropdown on hover */
+    .nav-menu .dropdown:hover .dropdown-content {
+      display: flex;
+    }
+  
+    /* Columns Layout */
+    .nav-menu .dropdown-content .column {
+      display: flex;
+      flex-direction: column;
+      margin-right: 30px;
+    }
+  
+    /* Link styling inside dropdown */
+    .nav-menu .dropdown-content .column a {
+      text-decoration: none;
+      color: #696262;
+      font-size: 13px;
+      padding: 5px 0;
+      transition: color 0.3s ease;
+    }
+  
+    .nav-menu .dropdown-content .column a:hover {
+      color: #e91e63; /* Light pink hover */
+    }
+  
+    /* Specific widths (optional for alignment) */
+    .shop-dropdown {
+      width: auto;
+    }
+  
+    .home-decor-dropdown {
+      width: auto;
+    }
+  }
+  
