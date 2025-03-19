@@ -3,7 +3,6 @@
   .mobile-nav {
     max-height: 100vh;
     overflow-y: auto;
-    width: 100%;
     background-color: #fff;
     z-index: 1000;
   }
