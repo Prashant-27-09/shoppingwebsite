@@ -1,0 +1,28 @@
+.whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ff69b4; /* Pink background */
+    color: white; /* White icon */
+    border-radius: 50%;
+    text-align: center;
+    font-size: 30px;
+    line-height: 60px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    z-index: 999;
+    text-decoration: none;
+  }
+  
+  .whatsapp-float:hover {
+    background-color: #e754a1; /* Darker pink on hover */
+  }
+  
+
+  @media (max-width: 769px) {
+    .whatsapp-float{
+        display: none;
+    }
+    
+}
